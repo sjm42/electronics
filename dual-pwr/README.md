@@ -1,7 +1,7 @@
 # Dual-pwr
 
-I got this inspiration from the book *1001 Circuits* by Elektor.
-The circuit is titled "Turning your Bench Supply into a Dual Supply".
+I got this inspiration from the book **1001 Circuits** by _Elektor_.
+The circuit is titled **Turning your Bench Supply into a Dual Supply**.
 
 I added a fuse, a few diodes for protection and a trimmer for fine adjustment of the "ground" level.
 
