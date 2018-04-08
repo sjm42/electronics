@@ -1,2 +1,2 @@
-# electronics
-Various electronics projects
+# Electronics
+My various electronics projects
