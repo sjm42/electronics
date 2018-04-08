@@ -1,5 +1,4 @@
 EESchema Schematic File Version 2
-LIBS:dual-pwr-rescue
 LIBS:power
 LIBS:device
 LIBS:switches
@@ -72,23 +71,23 @@ $EndComp
 $Comp
 L NE5532 U1
 U 2 1 5AA67495
-P 4500 3500
-F 0 "U1" H 4500 3700 50  0000 L CNN
-F 1 "NE5532" H 4500 3300 50  0000 L CNN
-F 2 "Housings_DIP:DIP-8_W7.62mm_Socket" H 4500 3500 50  0001 C CNN
-F 3 "" H 4500 3500 50  0001 C CNN
-	2    4500 3500
-	1    0    0    -1  
-$EndComp
-$Comp
-L NE5532 U1
-U 1 1 5AA6759E
 P 4300 5800
 F 0 "U1" H 4300 6000 50  0000 L CNN
 F 1 "NE5532" H 4300 5600 50  0000 L CNN
 F 2 "Housings_DIP:DIP-8_W7.62mm_Socket" H 4300 5800 50  0001 C CNN
 F 3 "" H 4300 5800 50  0001 C CNN
-	1    4300 5800
+	2    4300 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L NE5532 U1
+U 1 1 5AA6759E
+P 4500 3500
+F 0 "U1" H 4500 3700 50  0000 L CNN
+F 1 "NE5532" H 4500 3300 50  0000 L CNN
+F 2 "Housings_DIP:DIP-8_W7.62mm_Socket" H 4500 3500 50  0001 C CNN
+F 3 "" H 4500 3500 50  0001 C CNN
+	1    4500 3500
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -140,7 +139,7 @@ L R R2
 U 1 1 5AA6798F
 P 3600 3850
 F 0 "R2" V 3680 3850 50  0000 C CNN
-F 1 "10k" V 3600 3850 50  0000 C CNN
+F 1 "9k1" V 3600 3850 50  0000 C CNN
 F 2 "Resistors_ThroughHole:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 3530 3850 50  0001 C CNN
 F 3 "" H 3600 3850 50  0001 C CNN
 	1    3600 3850
@@ -174,7 +173,7 @@ U 1 1 5AA6B8EE
 P 7800 3100
 F 0 "C1" H 7825 3200 50  0000 L CNN
 F 1 "1000u 25V" H 7825 3000 50  0000 L CNN
-F 2 "Capacitors_ThroughHole:CP_Radial_D10.0mm_P3.50mm" H 7838 2950 50  0001 C CNN
+F 2 "Capacitors_ThroughHole:CP_Radial_D10.0mm_P5.00mm" H 7838 2950 50  0001 C CNN
 F 3 "" H 7800 3100 50  0001 C CNN
 	1    7800 3100
 	1    0    0    -1  
@@ -185,7 +184,7 @@ U 1 1 5AA6BAAD
 P 7800 4300
 F 0 "C2" H 7825 4400 50  0000 L CNN
 F 1 "1000u 25V" H 7825 4200 50  0000 L CNN
-F 2 "Capacitors_ThroughHole:CP_Radial_D10.0mm_P3.50mm" H 7838 4150 50  0001 C CNN
+F 2 "Capacitors_ThroughHole:CP_Radial_D10.0mm_P5.00mm" H 7838 4150 50  0001 C CNN
 F 3 "" H 7800 4300 50  0001 C CNN
 	1    7800 4300
 	1    0    0    -1  
@@ -196,7 +195,7 @@ U 1 1 5AA6BB69
 P 8300 3100
 F 0 "C3" H 8325 3200 50  0000 L CNN
 F 1 "1u 50V" H 8325 3000 50  0000 L CNN
-F 2 "Capacitors_ThroughHole:C_Rect_L7.0mm_W4.5mm_P5.00mm" H 8338 2950 50  0001 C CNN
+F 2 "Capacitors_ThroughHole:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 8338 2950 50  0001 C CNN
 F 3 "" H 8300 3100 50  0001 C CNN
 	1    8300 3100
 	1    0    0    -1  
@@ -207,7 +206,7 @@ U 1 1 5AA6BC2E
 P 8300 4300
 F 0 "C4" H 8325 4400 50  0000 L CNN
 F 1 "1u 50V" H 8325 4200 50  0000 L CNN
-F 2 "Capacitors_ThroughHole:C_Rect_L7.0mm_W4.5mm_P5.00mm" H 8338 4150 50  0001 C CNN
+F 2 "Capacitors_ThroughHole:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 8338 4150 50  0001 C CNN
 F 3 "" H 8300 4300 50  0001 C CNN
 	1    8300 4300
 	1    0    0    -1  
@@ -225,9 +224,6 @@ Wire Wire Line
 Wire Wire Line
 	3600 2500 3600 3200
 Connection ~ 3600 2500
-Wire Wire Line
-	3600 4000 3600 5050
-Connection ~ 3600 5050
 Wire Wire Line
 	3600 3500 3600 3700
 Wire Wire Line
@@ -288,7 +284,7 @@ Wire Wire Line
 Wire Wire Line
 	4000 6250 4000 5900
 Wire Wire Line
-	4000 5700 4000 3600
+	4000 3400 4000 5700
 Connection ~ 4000 3600
 $Comp
 L Conn_01x01 J3
@@ -407,7 +403,7 @@ Wire Wire Line
 	5700 4000 5500 4000
 Connection ~ 5500 4000
 Wire Wire Line
-	5700 3100 5500 3100
+	5300 3100 5700 3100
 Connection ~ 5500 3100
 Wire Wire Line
 	6000 2900 6000 2500
@@ -418,31 +414,6 @@ Wire Wire Line
 	6000 4200 6000 5050
 Connection ~ 6000 5050
 Connection ~ 6000 3600
-$Comp
-L R R5
-U 1 1 5AA7059C
-P 7250 3100
-F 0 "R5" V 7330 3100 50  0000 C CNN
-F 1 "10k" V 7250 3100 50  0000 C CNN
-F 2 "Resistors_ThroughHole:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 7180 3100 50  0001 C CNN
-F 3 "" H 7250 3100 50  0001 C CNN
-	1    7250 3100
-	1    0    0    -1  
-$EndComp
-$Comp
-L R R6
-U 1 1 5AA70627
-P 7250 4300
-F 0 "R6" V 7330 4300 50  0000 C CNN
-F 1 "10k" V 7250 4300 50  0000 C CNN
-F 2 "Resistors_ThroughHole:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 7180 4300 50  0001 C CNN
-F 3 "" H 7250 4300 50  0001 C CNN
-	1    7250 4300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7250 2950 7250 2500
-Connection ~ 7250 2500
 Wire Wire Line
 	6850 2950 6850 2500
 Connection ~ 6850 2500
@@ -450,18 +421,37 @@ Wire Wire Line
 	6850 3250 6850 4150
 Connection ~ 6850 3600
 Wire Wire Line
-	7250 3250 7250 4150
-Connection ~ 7250 3600
-Wire Wire Line
 	6850 4450 6850 5050
 Connection ~ 6850 5050
-Wire Wire Line
-	7250 4450 7250 5050
-Connection ~ 7250 5050
 Text GLabel 3100 2250 1    60   Input ~ 0
 +V
 Text GLabel 3100 5350 3    60   Input ~ 0
 -V
 Text GLabel 5850 3600 0    60   Input ~ 0
 GND
+$Comp
+L POT RV1
+U 1 1 5ACA1980
+P 3600 4400
+F 0 "RV1" V 3425 4400 50  0000 C CNN
+F 1 "2k" V 3500 4400 50  0000 C CNN
+F 2 "Potentiometers:Potentiometer_Trimmer_Vishay_T73XW_Vertical" H 3600 4400 50  0001 C CNN
+F 3 "" H 3600 4400 50  0001 C CNN
+	1    3600 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 4250 3600 4000
+Wire Wire Line
+	3600 4550 3600 5050
+Connection ~ 3600 5050
+Wire Wire Line
+	3750 4400 3750 4650
+Wire Wire Line
+	3750 4650 3600 4650
+Connection ~ 3600 4650
+Text GLabel 5300 3100 0    60   Input ~ 0
+VBase
+Text GLabel 4000 3400 1    60   Input ~ 0
+Vref
 $EndSCHEMATC

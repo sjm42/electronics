@@ -1,5 +1,5 @@
 Drill report for /home/sjm/kicad/dual-pwr/dual-pwr.kicad_pcb
-Created on Sun 08 Apr 2018 03:34:55 PM EEST
+Created on Sun 08 Apr 2018 08:28:00 PM EEST
 
 Copper Layer Stackup:
     =============================================================
@@ -12,14 +12,14 @@ Drill file 'dual-pwr.drl' contains
     =============================================================
     T1  0.50mm  0.020"  (32 holes)
     T2  0.60mm  0.024"  (3 holes)
-    T3  0.80mm  0.031"  (24 holes)
+    T3  0.80mm  0.031"  (23 holes)
     T4  1.00mm  0.039"  (10 holes)
     T5  1.10mm  0.043"  (4 holes)
     T6  1.20mm  0.047"  (7 holes)
     T7  1.35mm  0.053"  (8 holes)
     T8  3.20mm  0.126"  (4 holes)
 
-    Total plated holes count 92
+    Total plated holes count 91
 
 
 Not plated through holes are merged with plated holes
