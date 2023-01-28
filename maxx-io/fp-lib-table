@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name "00local")(type "KiCad")(uri "/home/sjm/electronics/maxx-io")(options "")(descr ""))
+)
