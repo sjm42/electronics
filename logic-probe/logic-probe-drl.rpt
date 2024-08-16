@@ -1,0 +1,30 @@
+Drill report for /home/sjm/kicad/logic-probe/logic-probe.kicad_pcb
+Created on Sun 28 Apr 2019 04:36:54 PM EEST
+
+Copper Layer Stackup:
+    =============================================================
+    L1 :  F.Cu                      front
+    L2 :  B.Cu                      back
+
+
+Drill file 'logic-probe.drl' contains
+    plated through holes:
+    =============================================================
+    T1  0.40mm  0.016"  (47 holes)
+    T2  0.50mm  0.020"  (32 holes)
+    T3  0.60mm  0.024"  (24 holes)
+    T4  0.76mm  0.030"  (32 holes)
+    T5  0.80mm  0.031"  (31 holes)
+    T6  1.00mm  0.039"  (51 holes)  (with 3 slots)
+    T7  1.00mm  0.039"  (25 holes)
+    T8  1.25mm  0.049"  (2 holes)
+    T9  3.20mm  0.126"  (4 holes)
+
+    Total plated holes count 248
+
+
+Not plated through holes are merged with plated holes
+    unplated through holes:
+    =============================================================
+
+    Total unplated holes count 0
